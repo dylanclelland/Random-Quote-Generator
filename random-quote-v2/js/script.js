@@ -2,11 +2,8 @@
 // when user clicks anywhere on the button, the "printQuote" function is called
 document.getElementById('loadQuote').addEventListener("click", printQuote, false);
 
-<<<<<<< HEAD
 var veiwedQuote = [];
-=======
 var quoteSeen = [];
->>>>>>> 905641f1c964effdc5220927c59887cc4245aa58
 var blue;
 var red;
 var green;
