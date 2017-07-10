@@ -79,7 +79,6 @@ function print(quoteList) {
 //Getting the quote from the Quote object
   function getRandomQuote(){
     randomQuote = Math.floor(Math.random() * quoteList.length);
-<<<<<<< HEAD
 
     var splicedQuote = quoteList.splice(randomQuote, 1)[0];
     veiwedQuote.push(splicedQuote);
@@ -87,10 +86,7 @@ function print(quoteList) {
       quoteList = veiwedQuote;
       veiwedQuote = [];
     }
-    
-=======
     var splicedQuote = quoteList.splice(randomQuote, 1)[0];
->>>>>>> 905641f1c964effdc5220927c59887cc4245aa58
     return splicedQuote;
   }
 
