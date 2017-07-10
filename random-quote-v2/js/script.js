@@ -2,7 +2,7 @@
 // when user clicks anywhere on the button, the "printQuote" function is called
 document.getElementById('loadQuote').addEventListener("click", printQuote, false);
 
-var quoteSeen = [];
+var veiwedQuote = [];
 var blue;
 var red;
 var green;
@@ -75,7 +75,14 @@ function print(quoteList) {
 //Getting the quote from the Quote object
   function getRandomQuote(){
     randomQuote = Math.floor(Math.random() * quoteList.length);
+
     var splicedQuote = quoteList.splice(randomQuote, 1)[0];
+    veiwedQuote.push(splicedQuote);
+    if(quoteList.length === 0){
+      quoteList = veiwedQuote;
+      veiwedQuote = [];
+    }
+    
     return splicedQuote;
   }
 
