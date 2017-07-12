@@ -83,7 +83,6 @@ function print(quoteList) {
       quoteList = veiwedQuote;
       veiwedQuote = [];
     }
-    var splicedQuote = quoteList.splice(randomQuote, 1)[0];
     return splicedQuote;
   }
 
