@@ -75,7 +75,7 @@ function print(quoteList) {
 
 //Getting the quote from the Quote object
   function getRandomQuote(){
-    randomQuote = Math.floor(Math.random() * quoteList.length);
+    var randomQuote = Math.floor(Math.random() * quoteList.length);
 
     var splicedQuote = quoteList.splice(randomQuote, 1)[0];
     veiwedQuote.push(splicedQuote);
